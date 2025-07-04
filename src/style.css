@@ -1,4 +1,54 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  background-image: radial-gradient(ellipse at center, #17882c 1%, #00510f 100%);
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.ifro-name {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.ifro-name a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.ifro-name h6 {
+  font-size: .85rem;
+  font-weight: 100;
+}
+
+.ifro-name h3 {
+  text-transform: uppercase;
+}
+
+.header-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: auto 0;
+}
+
+.header-icons {
+  display: flex;
+  flex-direction: row;
 }
