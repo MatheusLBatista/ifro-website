@@ -283,3 +283,135 @@ header {
   color: #444;
   line-height: 1.4rem;
 }
+
+:root {
+  --footer-shortcuts: #01410F;
+  --heading-color: #61B06F;
+  --link-color: #FFFFFF;
+  --text-color: #333333;
+  --logo-background: #002907;
+}
+
+.footer-container {
+  background-color: var(--footer-shortcuts);
+  color: var(--link-color);
+  font-family: 'Open Sans', Arial, sans-serif;
+  width: 100%;
+  margin-top: 48px;
+}
+
+.link-group {
+  flex: 1 1 200px;
+}
+
+.link-content {
+  border-left: 1px dotted var(--link-color);
+  padding-left: 12px;
+}
+
+.link-content:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.heading {
+  color: var(--heading-color);
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links ul li {
+  margin-bottom: 8px;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+.links ul li a:hover {
+  color: var(--heading-color);
+}
+
+.footer-logos {
+  background-color: var(--logo-background);
+  padding: 24px 0;
+  margin-top: 24px;
+}
+
+.logo-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.logo-info .logo img {
+  max-height: 50px;
+  width: auto;
+  display: block;
+}
+
+.background {
+  background-color: var(--link-color);
+}
+
+.address {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--text-color);
+  padding: 8px 40px;
+  font-size: 0.9rem;
+}
+
+.about-info {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5rem;
+  color: var(--text-color);
+}
+
+/* Responsividade Rodapé*/
+@media (max-width: 768px) {
+  .footer-shortcuts {
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px 24px;
+  }
+
+  .link-content {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .footer-logos {
+    padding: 16px 0;
+  }
+
+  .address {
+    padding: 24px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-shortcuts {
+    gap: 16px;
+  }
+
+  .logo-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
