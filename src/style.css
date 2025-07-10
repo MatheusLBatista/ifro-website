@@ -415,3 +415,99 @@ header {
     align-items: center;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .header-tools {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .search-bar {
+    flex: 1;
+  }
+
+  .header-icons {
+    justify-content: flex-end;
+    flex: 1;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    margin-bottom: 8px;
+  }
+
+  .logo-ifro {
+    max-width: 30%;
+  }
+
+  .sidebar-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .sidebar-buttons a img {
+    max-width: 100%;
+  }
+
+  .sidebar-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .sidebar-links li {
+    border: none;
+  }
+
+  .sidebar-links a {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .noticia-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .noticia-card img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .conteudo-noticia {
+    align-items: center;
+  }
+
+  .conteudo-noticia h3 {
+    font-size: 1rem;
+  }
+
+  .conteudo-noticia p {
+    font-size: 0.88rem;
+  }
+  
+  .logo-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .about-info p {
+    font-size: 0.85rem;
+  }
+}
+
